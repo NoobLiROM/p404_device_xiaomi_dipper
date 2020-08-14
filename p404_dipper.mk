@@ -6,16 +6,13 @@
 
 $(call inherit-product, device/xiaomi/dipper/device.mk)
 
-# Inherit some common PixelExperience stuff.
-TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_WIFI_EXT := true
+# Inherit some common Project-404 stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/404/configs/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_dipper
+PRODUCT_NAME := p404_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8

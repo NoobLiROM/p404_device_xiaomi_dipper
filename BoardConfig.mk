@@ -19,9 +19,7 @@ TARGET_SCREEN_DENSITY := 411
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/dipper
 TARGET_KERNEL_CONFIG := dipper_defconfig
-TARGET_KERNEL_CLANG_VERSION := proton
-KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin
-KERNEL_SUPPORTS_LLVM_TOOLS := true
+TARGET_KERNEL_CLANG_VERSION := cbl
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
