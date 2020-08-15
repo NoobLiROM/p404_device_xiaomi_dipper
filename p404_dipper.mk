@@ -9,6 +9,7 @@ $(call inherit-product, device/xiaomi/dipper/device.mk)
 # Inherit some common Project-404 stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
+IS_PHONE := true
 $(call inherit-product, vendor/404/configs/common.mk)
 
 # Device identifier. This must come after all inclusions.
